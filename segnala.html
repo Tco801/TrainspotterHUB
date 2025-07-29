@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Segnala una spottata</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🚂 Segnala una spottata</h1>
+    <nav>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='spott-pubblici.html'">Spott Pubblici</button>
+    </nav>
+  </header>
+
+  <main>
+    <form id="spottForm">
+      <label for="tipo">Tipo rotabile:</label>
+      <input type="text" id="tipo" name="tipo" required />
+
+      <label for="modello">Modello:</label>
+      <input type="text" id="modello" name="modello" required />
+
+      <label for="numero">Numero:</label>
+      <input type="text" id="numero" name="numero" />
+
+      <label for="luogo">Luogo avvistamento:</label>
+      <input type="text" id="luogo" name="luogo" required />
+
+      <label for="data">Data e ora:</label>
+      <input type="datetime-local" id="data" name="data" required />
+
+      <label for="foto">Foto:</label>
+      <input type="file" id="foto" name="foto" accept="image/*" />
+
+      <button type="submit">Invia spottata</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 TrainSpotterHub</p>
+  </footer>
+</body>
+</html>
